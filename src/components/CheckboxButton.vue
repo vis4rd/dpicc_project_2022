@@ -46,9 +46,9 @@
     .checkbox_wrapper {
         display: flex;
         flex-direction: row;
+        justify-content: center;
 
         text-align: center;
-        font-size: inherit;
 
         margin: 4px;
         padding: 5px 15px;
@@ -60,7 +60,7 @@
         border-color: var(--color-border);
 
         cursor: pointer;
-        transition: 0.4s;
+        transition: var(--transition-time);
     }
 
     .checkbox_wrapper input[type="checkbox"] {
@@ -73,7 +73,7 @@
 
     .checkbox_wrapper input[type="checkbox"]:checked + label {
         color: var(--color-selected);
-        transition: 0.4s;
+        transition: var(--transition-time);
     }
 
     .checkbox_wrapper:has(input[type="checkbox"]:checked) {
@@ -91,6 +91,6 @@
         -ms-user-select: none;
         user-select: none;
 
-        transition: 0.4s;
+        transition: var(--transition-time);
     }
 </style>

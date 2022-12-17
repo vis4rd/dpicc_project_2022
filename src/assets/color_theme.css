@@ -21,6 +21,8 @@
     --vt-c-text-dark-2: rgba(235, 235, 235, 0.64);
 
     --vt-c-green: #00bd7e;
+
+    --transition-time: 0.3s;
 }
 
 /* semantic color variables for this project */
