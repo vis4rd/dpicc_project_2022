@@ -64,8 +64,7 @@
     }
 
     .checkbox_wrapper input[type="checkbox"] {
-        margin-right: 5px;
-        cursor: pointer;
+        display: none;
     }
 
     .checkbox_wrapper:hover {

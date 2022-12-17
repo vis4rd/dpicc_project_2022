@@ -6,20 +6,22 @@
 </script>
 
 <template>
-    <h1>This is an about page</h1>
+    <h2>This is an about page</h2>
     options = {{ tempoStore.options }}
     <br />
 
-    <template
-        v-for="option in tempoStore.options"
-        :key="option"
-    >
-        <CheckboxButton
-            :on_click_func="tempoStore.updateSelected"
-            :label="option"
-            :checked="tempoStore.isSelected(option)"
-        />
-    </template>
+    <div class="options_group">
+        <template
+            v-for="option in tempoStore.options"
+            :key="option"
+        >
+            <CheckboxButton
+                :on_click_func="tempoStore.updateSelected"
+                :label="option"
+                :checked="tempoStore.isSelected(option)"
+            />
+        </template>
+    </div>
 
     <br />
     selected = {{ tempoStore.selected }}
@@ -28,5 +30,10 @@
 </template>
 
 <style scoped>
-    /*  */
+    .options_group {
+        display: flex;
+        width: auto;
+
+        border: solid white 1px;
+    }
 </style>
