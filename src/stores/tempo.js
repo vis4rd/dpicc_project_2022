@@ -1,11 +1,10 @@
-import { ref, computed } from "vue";
+import { ref } from "vue";
 import { defineStore } from "pinia";
 import { music } from "../music_data/music_data.js";
 
 export const TempoStore = defineStore("tempo", () => {
     const options = music().tempos;
     const selected = ref([]);
-    // const unselected = computed(() => options.value - selected.value);
 
     function updateSelected(event) {
         console.log(`event = ${event.target.checked}`);

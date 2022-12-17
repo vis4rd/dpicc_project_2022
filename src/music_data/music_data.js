@@ -20,7 +20,7 @@ export const music = () => {
         "metal",
     ];
     const tempos = ["rapid", "fast", "moderate", "slow", "very slow"];
-    const moods = ["happy", "sad", "energic", "melancholic", "neutral", "rythmic"];
+    const moods = ["happy", "sad", "energetic", "melancholic", "neutral", "rythmic"];
     const environments = [
         "home",
         "party",
