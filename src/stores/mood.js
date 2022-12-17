@@ -2,8 +2,8 @@ import { ref, computed } from "vue";
 import { defineStore } from "pinia";
 import { music } from "../music_data/music_data.js";
 
-export const TempoStore = defineStore("tempo", () => {
-    const options = music().tempos;
+export const TempoStore = defineStore("mood", () => {
+    const options = music().moods;
     const selected = ref([]);
     const unselected = computed(() => {
         // eslint-disable-next-line no-unused-vars

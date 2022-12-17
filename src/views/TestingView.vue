@@ -1,4 +1,5 @@
 <script setup>
+    import CheckboxButton from "../components/CheckboxButton.vue";
     import { TempoStore } from "../stores/tempo.js";
 
     const tempoStore = TempoStore();
@@ -13,14 +14,11 @@
         v-for="option in tempoStore.options"
         :key="option"
     >
-        <input
-            type="checkbox"
-            :id="option"
-            :name="option"
-            @click="tempoStore.updateSelected($event)"
+        <CheckboxButton
+            :on_click_func="tempoStore.updateSelected"
+            :label="option"
             :checked="tempoStore.isSelected(option)"
         />
-        <label :for="option">{{ option }}</label>
     </template>
 
     <br />

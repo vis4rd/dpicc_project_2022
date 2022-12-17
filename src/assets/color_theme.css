@@ -38,6 +38,8 @@
 
     --color-a: var(--vt-c-green);
     --color-a-hover: var(--vt-c-black);
+
+    --color-selected: var(--vt-c-green);
 }
 
 /* dark theme */
