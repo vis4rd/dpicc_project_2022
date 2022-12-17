@@ -2,7 +2,7 @@ import { ref, computed } from "vue";
 import { defineStore } from "pinia";
 import { music } from "../music_data/music_data.js";
 
-export const TempoStore = defineStore("environment", () => {
+export const EnvironmentStore = defineStore("environment", () => {
     const options = music().environments;
     const selected = ref([]);
     const unselected = computed(() => {

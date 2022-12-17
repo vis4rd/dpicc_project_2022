@@ -2,7 +2,7 @@ import { ref, computed } from "vue";
 import { defineStore } from "pinia";
 import { music } from "../music_data/music_data.js";
 
-export const TempoStore = defineStore("fullness", () => {
+export const FullnessStore = defineStore("fullness", () => {
     const options = music().fullnesses;
     const selected = ref([]);
     const unselected = computed(() => {
