@@ -1,5 +1,4 @@
 <script setup>
-    // import { ref, reactive } from "vue";
     import { TempoStore } from "../stores/tempo.js";
 
     const tempoStore = TempoStore();
@@ -19,12 +18,15 @@
             :id="option"
             :name="option"
             @click="tempoStore.updateSelected($event)"
+            :checked="tempoStore.isSelected(option)"
         />
         <label :for="option">{{ option }}</label>
     </template>
 
     <br />
     selected = {{ tempoStore.selected }}
+    <br />
+    unselected = {{ tempoStore.unselected }}
 </template>
 
 <style scoped>
