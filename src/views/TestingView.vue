@@ -1,11 +1,12 @@
 <script setup>
-    // import CheckboxButton from "../components/CheckboxButton.vue";
-    import OptionsGroup from "../components/OptionsGroup.vue";
     import { TempoStore } from "../stores/tempo.js";
     import { EnvironmentStore } from "../stores/environment.js";
     import { FullnessStore } from "../stores/fullness.js";
     import { MoodStore } from "../stores/mood.js";
     import { TypeStore } from "../stores/type.js";
+
+    import OptionsGroup from "../components/OptionsGroup.vue";
+    import AsyncGenreLoader from "../components/AsyncGenreLoader.vue";
 
     const tempoStore = TempoStore();
     const environmentStore = EnvironmentStore();
@@ -38,6 +39,8 @@
             Do you have a preference between instrumental or vocal music?
         </h3>
     </OptionsGroup>
+
+    <AsyncGenreLoader />
 </template>
 
 <style scoped>
