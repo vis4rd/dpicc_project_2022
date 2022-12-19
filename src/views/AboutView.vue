@@ -1,37 +1,17 @@
-<script setup>
-    import { useCounterStore } from "../stores/counter.js";
-
-    const counterStore = useCounterStore();
-    const increment = counterStore.increment;
-</script>
-
 <template>
-    <div class="vertical">
-        <div class="about">
-            <h1>
-                This is an about page: {{ counterStore.count }} and {{ counterStore.doubleCount }}
-            </h1>
-        </div>
-        <button @click="increment()">Increment</button>
+    <div class="about">
+        <h2>About this page</h2>
+        author: Aleksander Kluczka<br />
+        email: qlootchka@student.agh.edu.pl<br />
+        album: 404381
     </div>
 </template>
 
 <style scoped>
     .about {
-        min-height: 50px;
-        display: flex;
-        align-items: center;
+        text-align: center;
     }
-
-    .vertical {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .vertical button {
-        width: 20%;
-        max-width: 300px;
-        min-width: fit-content;
+    h2 {
+        color: var(--vt-c-green);
     }
 </style>

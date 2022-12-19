@@ -22,7 +22,10 @@
         padding: 1rem;
         margin-bottom: 2rem;
 
-        border: solid pink 1px;
+        border-style: solid;
+        border-radius: 6px;
+        border-width: 1px;
+        border-color: var(--color-border);
     }
 
     main {
@@ -33,6 +36,9 @@
         padding: 1rem;
         margin-top: 2rem;
 
-        border: solid red 1px;
+        border-style: solid;
+        border-radius: 6px;
+        border-width: 1px;
+        border-color: var(--color-border);
     }
 </style>
