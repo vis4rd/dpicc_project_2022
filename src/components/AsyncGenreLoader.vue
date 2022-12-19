@@ -20,9 +20,7 @@
 <template>
     <div class="genres">
         <h2 class="genres_title">Your top 5 music genres!</h2>
-        <div class="async">
-            <GenreList />
-        </div>
+        <GenreList />
     </div>
 </template>
 
@@ -41,20 +39,5 @@
         margin: 0;
         padding: 0;
         color: var(--vt-c-green);
-    }
-
-    .async {
-        display: flex;
-        flex-direction: column;
-        place-items: center;
-        place-content: center;
-
-        width: 100%;
-        min-height: 6rem;
-
-        border-style: solid;
-        border-width: 1px;
-        border-color: var(--color-border);
-        border-radius: 10px;
     }
 </style>
